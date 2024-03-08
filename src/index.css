@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Text1;
+    src: url(Font/FuturaPTMedium.otf);
+}
+
+@font-face {
+    font-family: Text2;
+    src: url(Font/FuturaPTLight.otf);
+}
+
+@font-face {
+    font-family: Text3;
+    src: url(Font/FuturaPTLightOblique.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /* Firefox */
+}
+::selection{
+    background-color: rgb(26, 219, 26);
+}
+.Text1 {
+    font-family: Text1;
+}
+
+.Text2 {
+    font-family: Text2;
+}
+
+.Text3 {
+    font-family: Text3;
+}
+
+.Background {
+    background-image: url(WeatherIcon/Sky.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.WeatherBack {
+    background-image: url(https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vdW50YWlufGVufDB8fDB8fHww);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ScrollBar {
+    animation: UpDown 1s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes UpDown {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width:850px) {
+    .DateTime {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .Container {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .WeatherContainer {
+        width: 100%;
+        padding: 10px 30px;
+    }
+
+    .City {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+    }
+
+    .Date {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+    }
+
+    .Date h6,
+    .City h6 {
+        font-size: 20px;
+    }
+
+    .Suntime {
+        font-size: 15px;
+        width: fit-content;
+    }
+
+    .Temp {
+        font-size: 4rem;
+    }
+
+    .Temp img {
+        width: 150px;
+    }
+
+    .OtherDetails {
+        flex-direction: row;
+        gap: 10px;
+        font-size: 15px;
+    }
+
+    .ForcastContainer {
+        max-width: 100%;
+        height: 65vh;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .Background input {
+        width: 60%;
+    }
+    .Container{
+        padding: 0px;
+    }
+    .WeatherBack{
+        padding: 50px 0px;
+    }
+    .Other {
+        justify-content: space-around;
+        gap: 20px;
+    }
+    .ForcastContainer h2 {
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+}
