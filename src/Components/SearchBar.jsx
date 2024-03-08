@@ -4,7 +4,7 @@ import ScrollDown from "../WeatherIcon/scroll-bar.png"
 const SearchBar = ({ cityname, setCityName, Weather }) => {
   return (
     <div className='Background w-full h-screen bg-slate-400 flex flex-col items-center justify-center'>
-      <video src="https://cdn.pixabay.com/vimeo/543910236/bike-72566.mp4?width=1280&hash=5d29723048789e6d3617d566be58cf8ca6ab948a" className='w-full h-full absolute bottom-0 left-0 object-cover' muted autoPlay loop ></video>
+      <video src="https://cdn.pixabay.com/vimeo/543910236/bike-72566.mp4?width=1280&hash=5d29723048789e6d3617d566be58cf8ca6ab948a" className='w-full h-[150vh] absolute -bottom-[100px] left-0 object-cover' muted autoPlay loop ></video>
       <div className='w-full h-full flex relative items-center justify-center'>
         <div className='w-full h-auto flex flex-col justify-center items-center gap-5'>
           <div className='w-full h-auto text-3xl text-white font-semibold flex items-center justify-center'>

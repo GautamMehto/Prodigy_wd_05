@@ -65,7 +65,7 @@ const WeatherDisplay = ({ weatherData, forcastData }) => {
         return Time
     }
     return (
-        <div className='WeatherBack w-full min-h-screen flex justify-center items-center gap-5 flex-col' id='WeatherBack'>
+        <div className='WeatherBack w-full min-h-screen flex justify-center items-center gap-5 flex-col relative z-10' id='WeatherBack'>
             <div className='Container w-[90%] h-[80%] bg-slate-50/10 backdrop-blur-sm px-5 text-white flex justify-center gap-5 items-center rounded-3xl'>
                 <div className='WeatherContainer w-[35%] h-[100%] p-5 px-0 bg-slate-100/0 rounded-3xl flex flex-col justify-evenly items-center'>
                     <div className='w-full h-auto'>
